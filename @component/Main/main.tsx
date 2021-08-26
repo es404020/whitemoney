@@ -192,10 +192,10 @@ function Main() {
                 {/* <Flex></Flex> */}
             </Flex>
 
-            <Flex width="full" direction="row" justifyContent="space-between" alignItems="baseline">
+            <Flex width="full" direction="row" justifyContent="space-between" alignItems="center">
                 <Flex>
-                    <Square size="40px" borderRadius="10px" bg="#E7EEFA" color="white">
-                    <FaShieldAlt color="#1951AB" />
+                    <Square size="60px" borderRadius="10px" bg="#E7EEFA" color="white">
+                    <FaShieldAlt size={24} color="#1951AB" />
                     </Square>
                 </Flex>
 
@@ -234,10 +234,10 @@ function Main() {
 
 
 
-             <Flex width="full" pt={5} direction="row" justifyContent="space-between">
+             <Flex width="full" pt={5} direction="row" justifyContent="space-between" alignItems="center">
                 <Flex>
-                    <Square size="40px" borderRadius="10px" bg="#FFEFE9" color="white">
-                        <AiOutlineThunderbolt color="#CE6E43" />
+                    <Square size="60px" borderRadius="10px" bg="#FFEFE9" color="white">
+                        <AiOutlineThunderbolt size={24} color="#CE6E43" />
                     </Square>
                 </Flex>
 
