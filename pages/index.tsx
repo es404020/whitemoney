@@ -46,13 +46,26 @@ const Home: NextPage = () => {
         position="relative"
         display={["none", "none", "none", "block", "block"]}
       >
-<Flex >
+<Flex  >
 <Sidenav />
 
 <Main />
-<Box minWidth="20%">
+<Flex 
+ pos="fixed"
+ right="0px"
+ top="0px"
+ h="100vh"
+     
+   
+      flexGrow={1}
+      FlexShadow="md"
+      width="20%"
+      flexDir="column"
+      justifyContent="space-between"
+      alignItems="center"
+       bg="#F9FAFE" >
 oke
-</Box>
+</Flex>
 </Flex>
 
        

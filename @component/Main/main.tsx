@@ -15,6 +15,7 @@ import {
     ListItem,
     ListIcon,
     HStack,
+    Stack,
     Icon,
     InputGroup,
     InputLeftElement,
@@ -33,23 +34,27 @@ import {
     position,
     Center,
 } from "@chakra-ui/react";
-import { SearchIcon } from "@chakra-ui/icons";
+import { AddIcon, SearchIcon, SettingsIcon } from "@chakra-ui/icons";
 import { BiBitcoin } from "react-icons/bi";
-import {ImCoinYen} from "react-icons/im";
-import {FaViacoin,FaEthereum} from "react-icons/fa";
-import {SiLitecoin} from "react-icons/si";
+import { ImCoinYen } from "react-icons/im";
+import { FaViacoin, FaEthereum,FaShieldAlt } from "react-icons/fa";
+import { SiLitecoin } from "react-icons/si";
+import {AiOutlineThunderbolt} from "react-icons/ai";
 import CurrencyCards from "./components/cards";
 function Main() {
     return (
         <Flex
-            minWidth="50%"
-            flex={10}
+        minHeight="0"
+            minWidth="66%"
+           
+           
             bg="white"
             marginLeft="14%"
+            marginRight="15%"
             px="3%"
             py="2%"
             pb="75px"
-            flexDir="column"
+            direction="column"
             overflowX="hidden"
             overflowY="auto"
             style={
@@ -98,35 +103,175 @@ function Main() {
                 </Circle>
             </Flex>
 
-            <Grid templateColumns="repeat(4,2fr)" gap="6" overflowX="auto"  css={{
-            '&::-webkit-scrollbar': {
-              width: '0',
-            },
-            '&::-webkit-scrollbar-track': {
-              width: '0',
-            },
-            '&::-webkit-scrollbar-thumb': {
-             
-              borderRadius: '24px',
-            },
-          }}
-         >
+            <Grid
+                templateColumns="repeat(4,2fr)"
+                gap="6"
+                overflowX="auto"
+                mb={20}
+                css={{
+                    "&::-webkit-scrollbar": {
+                        width: "0",
+                    },
+                    "&::-webkit-scrollbar-track": {
+                        width: "0",
+                    },
+                    "&::-webkit-scrollbar-thumb": {
+                        borderRadius: "24px",
+                    },
+                }}
+            >
+                <CurrencyCards
+                    bg="#FDECD4"
+                    icon={FaEthereum}
+                    name="Etheruim"
+                    text1="1.22222983883"
+                    text2="11,99.23 USD"
+                />
+                <CurrencyCards
+                    bg="#FCE4F8"
+                    icon={ImCoinYen}
+                    name="Yencoin"
+                    text1="0.22222983883"
+                    text2="1,99.23 USD"
+                />
 
+                <CurrencyCards
+                    bg="#B4E0E8"
+                    icon={FaViacoin}
+                    name="Litecoin"
+                    text1="0.9973683883"
+                    text2="17,99.23 USD"
+                />
 
-                
-
-               <CurrencyCards bg="#FDECD4" icon={FaEthereum} name="Etheruim" text1="1.22222983883" text2="11,99.23 USD" />
-               <CurrencyCards bg="#FCE4F8" icon={ImCoinYen} name="Yencoin"  text1="0.22222983883" text2="1,99.23 USD" />
-
-               <CurrencyCards bg="#B4E0E8" icon={FaViacoin} name="Litecoin" text1="0.9973683883" text2="17,99.23 USD" />
-
-               <CurrencyCards bg="#ECEEF9" icon={SiLitecoin} name="Moyocoin" text1="0.4345623883" text2="20,99.23 USD" />
-
-             
-
-
+                <CurrencyCards
+                    bg="#ECEEF9"
+                    icon={SiLitecoin}
+                    name="Moyocoin"
+                    text1="0.4345623883"
+                    text2="20,99.23 USD"
+                />
             </Grid>
 
+            <Flex direction="row"  mb={10} justifyContent="space-between">
+                <Flex width="40%" direction="row" justifyContent="space-between">
+                    <Flex direction="column">
+                        <Text fontSize="x-large" fontWeight="extrabold">
+                            Latest Activity
+                        </Text>
+                        <Text
+                            fontSize="meduim"
+                            color="rgb(114,118,122)"
+                            fontWeight="semibold"
+                        >
+                            Update 12 min ago
+                        </Text>
+                    </Flex>
+
+                    <Text
+                        as="ins"
+                        fontSize="meduim"
+                        alignSelf="flex-end"
+                        color="rgb(114,118,122)"
+                        fontWeight="semibold"
+                    >
+                        edit
+                    </Text>
+                </Flex>
+
+                <Flex direction="column-reverse">
+                    <Stack direction="row" spacing={4}>
+                        <Button bg="#F7F6F9" variant="solid">
+                            <SettingsIcon h={4} w={4} color="#92949A" />
+                        </Button>
+                        <Button bg="#51459F" variant="solid">
+                            <AddIcon h={4} w={4} color="white" />
+                        </Button>
+                    </Stack>
+                </Flex>
+
+                {/* <Flex></Flex> */}
+            </Flex>
+
+            <Flex width="full" direction="row" justifyContent="space-between" alignItems="baseline">
+                <Flex>
+                    <Square size="40px" borderRadius="10px" bg="#E7EEFA" color="white">
+                    <FaShieldAlt color="#1951AB" />
+                    </Square>
+                </Flex>
+
+                <Flex direction="column">
+
+                    <Text fontSize="large" fontWeight="extrabold">Insurances</Text>
+                    <Text fontSize="meduim"
+                        color="rgb(114,118,122)"
+                        fontWeight="semibold">Property Courage</Text>
+
+                </Flex>
+                <Flex direction="column">
+
+                    <Text fontSize="large" fontWeight="extrabold">LTC Wallet</Text>
+                    <Text fontSize="meduim"
+                        color="rgb(114,118,122)"
+                        fontWeight="semibold">Personal Account</Text>
+
+                </Flex>
+                <Flex direction="column">
+                    <Text fontSize="large" fontWeight="extrabold">7,jun 21</Text>
+                    <Text fontSize="meduim"
+                        color="rgb(114,118,122)"
+                        fontWeight="semibold">Last Payment</Text>
+
+                </Flex>
+                <Flex direction="column">
+                    <Text fontSize="large" fontWeight="extrabold">-10.24 LTC</Text>
+                    <Text fontSize="meduim"
+                        color="rgb(114,118,122)"
+                        fontWeight="semibold">Balance</Text>
+
+                </Flex>
+            </Flex>
+            
+
+
+
+             <Flex width="full" pt={5} direction="row" justifyContent="space-between">
+                <Flex>
+                    <Square size="40px" borderRadius="10px" bg="#FFEFE9" color="white">
+                        <AiOutlineThunderbolt color="#CE6E43" />
+                    </Square>
+                </Flex>
+
+                <Flex direction="column">
+
+                    <Text fontSize="large" fontWeight="extrabold">Insurances</Text>
+                    <Text fontSize="meduim"
+                        color="rgb(114,118,122)"
+                        fontWeight="semibold">Property Courage</Text>
+
+                </Flex>
+                <Flex direction="column">
+
+                    <Text fontSize="large" fontWeight="extrabold">LTC Wallet</Text>
+                    <Text fontSize="meduim"
+                        color="rgb(114,118,122)"
+                        fontWeight="semibold">Personal Account</Text>
+
+                </Flex>
+                <Flex direction="column">
+                    <Text fontSize="large" fontWeight="extrabold">7,jun 21</Text>
+                    <Text fontSize="meduim"
+                        color="rgb(114,118,122)"
+                        fontWeight="semibold">Last Payment</Text>
+
+                </Flex>
+                <Flex direction="column">
+                    <Text fontSize="large" fontWeight="extrabold">-10.24 LTC</Text>
+                    <Text fontSize="meduim"
+                        color="rgb(114,118,122)"
+                        fontWeight="semibold">Balance</Text>
+
+                </Flex>
+            </Flex>
         </Flex>
     );
 }
