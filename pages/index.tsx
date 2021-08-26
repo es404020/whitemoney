@@ -50,7 +50,7 @@ const Home: NextPage = () => {
 <Sidenav />
 
 <Main />
-<Box minWidth="30%">
+<Box minWidth="20%">
 oke
 </Box>
 </Flex>

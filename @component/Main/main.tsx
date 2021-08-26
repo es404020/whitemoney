@@ -98,17 +98,29 @@ function Main() {
                 </Circle>
             </Flex>
 
-            <Grid templateColumns="repeat(4,2fr)" gap="6" >
+            <Grid templateColumns="repeat(4,2fr)" gap="6" overflowX="auto"  css={{
+            '&::-webkit-scrollbar': {
+              width: '0',
+            },
+            '&::-webkit-scrollbar-track': {
+              width: '0',
+            },
+            '&::-webkit-scrollbar-thumb': {
+             
+              borderRadius: '24px',
+            },
+          }}
+         >
 
 
                 
 
                <CurrencyCards bg="#FDECD4" icon={FaEthereum} name="Etheruim" text1="1.22222983883" text2="11,99.23 USD" />
-               <CurrencyCards bg="#FCE4F8" icon={ImCoinYen} name="Yencoin"  text1="0.22222983883" text2="11,99.23 USD" />
+               <CurrencyCards bg="#FCE4F8" icon={ImCoinYen} name="Yencoin"  text1="0.22222983883" text2="1,99.23 USD" />
 
-               <CurrencyCards bg="#B4E0E8" icon={FaViacoin} name="Litecoin" text1="0.9973683883" text2="11,99.23 USD" />
+               <CurrencyCards bg="#B4E0E8" icon={FaViacoin} name="Litecoin" text1="0.9973683883" text2="17,99.23 USD" />
 
-               <CurrencyCards bg="#ECEEF9" icon={SiLitecoin} name="Moyocoin" text1="0.4345623883" text2="11,99.23 USD" />
+               <CurrencyCards bg="#ECEEF9" icon={SiLitecoin} name="Moyocoin" text1="0.4345623883" text2="20,99.23 USD" />
 
              
 
