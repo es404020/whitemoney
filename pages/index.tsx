@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import {Sidenav} from "../@component/SideNav/sidenav";
+import Main from "../@component/Main/main";
 import {
   Flex,
   Text,
@@ -47,6 +48,11 @@ const Home: NextPage = () => {
       >
 <Flex >
 <Sidenav />
+
+<Main />
+<Box minWidth="30%">
+oke
+</Box>
 </Flex>
 
        
