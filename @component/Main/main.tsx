@@ -43,6 +43,7 @@ import {AiOutlineThunderbolt} from "react-icons/ai";
 import CurrencyCards from "./components/cards";
 function Main() {
     return (
+        
         <Flex
         minHeight="0"
             minWidth="66%"
@@ -66,12 +67,14 @@ function Main() {
             css={{
                 "&::-webkit-scrollbar": {
                     width: "0",
+                    background: "transparent"
                 },
                 "&::-webkit-scrollbar-track": {
                     width: "0",
                 },
                 "&::-webkit-scrollbar-thumb": {
-                    borderRadius: "24px",
+                    borderRadius: "2px",
+                    background: "#FF0000"
                 },
             }}
         >
@@ -201,30 +204,30 @@ function Main() {
 
                 <Flex direction="column">
 
-                    <Text fontSize="large" fontWeight="extrabold">Insurances</Text>
-                    <Text fontSize="meduim"
+                    <Text fontSize="meduim" fontWeight="extrabold">Insurances</Text>
+                    <Text fontSize="sm"
                         color="rgb(114,118,122)"
                         fontWeight="semibold">Property Courage</Text>
 
                 </Flex>
                 <Flex direction="column">
 
-                    <Text fontSize="large" fontWeight="extrabold">LTC Wallet</Text>
-                    <Text fontSize="meduim"
+                    <Text fontSize="meduim" fontWeight="extrabold">LTC Wallet</Text>
+                    <Text fontSize="sm"
                         color="rgb(114,118,122)"
                         fontWeight="semibold">Personal Account</Text>
 
                 </Flex>
                 <Flex direction="column">
-                    <Text fontSize="large" fontWeight="extrabold">7,jun 21</Text>
-                    <Text fontSize="meduim"
+                    <Text fontSize="meduim" fontWeight="extrabold">7,jun 21</Text>
+                    <Text fontSize="sm"
                         color="rgb(114,118,122)"
                         fontWeight="semibold">Last Payment</Text>
 
                 </Flex>
                 <Flex direction="column">
-                    <Text fontSize="large" fontWeight="extrabold">-10.24 LTC</Text>
-                    <Text fontSize="meduim"
+                    <Text fontSize="meduim" fontWeight="extrabold">-10.24 LTC</Text>
+                    <Text fontSize="sm"
                         color="rgb(114,118,122)"
                         fontWeight="semibold">Balance</Text>
 
@@ -243,35 +246,38 @@ function Main() {
 
                 <Flex direction="column">
 
-                    <Text fontSize="large" fontWeight="extrabold">Insurances</Text>
-                    <Text fontSize="meduim"
+                    <Text fontSize="meduim" fontWeight="extrabold">Insurances</Text>
+                    <Text fontSize="sm"
                         color="rgb(114,118,122)"
                         fontWeight="semibold">Property Courage</Text>
 
                 </Flex>
                 <Flex direction="column">
 
-                    <Text fontSize="large" fontWeight="extrabold">LTC Wallet</Text>
-                    <Text fontSize="meduim"
+                    <Text fontSize="meduim" fontWeight="extrabold">LTC Wallet</Text>
+                    <Text fontSize="sm"
                         color="rgb(114,118,122)"
                         fontWeight="semibold">Personal Account</Text>
 
                 </Flex>
                 <Flex direction="column">
-                    <Text fontSize="large" fontWeight="extrabold">7,jun 21</Text>
-                    <Text fontSize="meduim"
+                    <Text fontSize="meduim" fontWeight="extrabold">7,jun 21</Text>
+                    <Text fontSize="sm"
                         color="rgb(114,118,122)"
                         fontWeight="semibold">Last Payment</Text>
 
                 </Flex>
                 <Flex direction="column">
-                    <Text fontSize="large" fontWeight="extrabold">-10.24 LTC</Text>
-                    <Text fontSize="meduim"
+                    <Text fontSize="meduim" fontWeight="extrabold">-10.24 LTC</Text>
+                    <Text fontSize="sm"
                         color="rgb(114,118,122)"
                         fontWeight="semibold">Balance</Text>
 
                 </Flex>
             </Flex>
+
+           
+            
         </Flex>
     );
 }

@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import {Sidenav} from "../@component/SideNav/sidenav";
 import Main from "../@component/Main/main";
+import Mine from "../@component/Main/mine"
 import {
   Flex,
   Text,
@@ -38,34 +39,28 @@ import {
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Box 
+    
+    
+  >
       <Flex
         w="100%"
         flexDirection="column"
         bg="white"
         position="relative"
-        display={["none", "none", "none", "block", "block"]}
+        display={["none", "none", "none", "block", "block"]
+        
+      
+      }
+
+    
       >
 <Flex  >
 <Sidenav />
 
+
 <Main />
-<Flex 
- pos="fixed"
- right="0px"
- top="0px"
- h="100vh"
-     
-   
-      flexGrow={1}
-      FlexShadow="md"
-      width="20%"
-      flexDir="column"
-      justifyContent="space-between"
-      alignItems="center"
-       bg="#F9FAFE" >
-oke
-</Flex>
+<Mine />
 </Flex>
 
        
@@ -81,7 +76,7 @@ oke
           Use on a Laptop mobile view coming soon 🙏
         </Center>
       </Flex>
-    </>
+    </Box>
   );
 };
 
