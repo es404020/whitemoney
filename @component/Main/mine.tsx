@@ -45,7 +45,7 @@ const Mine = () => {
             top="0px"
             h="100vh"
             flexGrow={1}
-            FlexShadow="md"
+           
             width="20%"
             flexDir="column"
             alignItems="start"
@@ -118,13 +118,13 @@ const Mine = () => {
                         <Flex
                             width="50%"
                             dir="row"
-                            justifyContent="space-between"
+                            justifyContent="space-evenly"
                             alignItems="center"
                         >
-                            <Circle size="40px" bg="tomato" color="white">
+                            <Circle size="30px" bg="tomato" color="white">
                                 <FaEthereum />
                             </Circle>
-                            <Text fontSize="sm">Received LTC</Text>
+                            <Text fontSize="xs">Received LTC</Text>
                         </Flex>
 
                         <Flex>
@@ -164,13 +164,13 @@ const Mine = () => {
                         <Flex
                             width="50%"
                             dir="row"
-                            justifyContent="space-between"
+                            justifyContent="space-evenly"
                             alignItems="center"
                         >
-                            <Circle size="40px" bg="#63DCCA" color="white">
+                            <Circle size="30px"  bg="#63DCCA" color="white">
                                 <FaViacoin />
                             </Circle>
-                            <Text fontSize="sm">Received LTC</Text>
+                            <Text fontSize="xs">Received LTC</Text>
                         </Flex>
 
                         <Flex>
